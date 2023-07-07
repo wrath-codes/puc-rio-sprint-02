@@ -10,10 +10,26 @@ export interface IMovie {
 
 // Component that takes a IMovie and renders a movie info
 function Movie({ movie }: { movie: IMovie }) {
+  const changeVoteColor = (vote: number) => {
+    if (vote > 9) {
+      return "text-emerald-100"
+    } else if (vote > 8) {
+      return "text-emerald-300"
+    } else if (vote > 6) {
+      return "text-emerald-500"
+    } else if (vote > 4) {
+      return "text-amber-300"
+    } else if (vote > 2) {
+      return "text-amber-500"
+    } else {
+      return "text-red-500"
+    }
+  }
+
   return (
     <div className="text-center">
       <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className="rounded-lg mb-2" />
-      <p className={`text-sm ${movie.vote_average > 6 ? "text-emerald-500" : "text-rose-500"} font-semibold`}>
+      <p className={`text-sm ${changeVoteColor(movie.vote_average)} font-semibold`}>
         {movie.vote_average}
       </p>
       <Title title={movie.title} />
