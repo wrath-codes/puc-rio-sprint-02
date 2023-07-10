@@ -8,5 +8,4 @@ export default defineConfig({
     react(),
     tsconfigPaths()
   ],
-  base: process.env.VITE_PUBLIC_URL,
 })
