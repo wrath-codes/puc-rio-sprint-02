@@ -26,7 +26,7 @@ npm install
 ```bash
 npm run dev
 ```
-4. [Uma conta na TMDB(The Movie Database)](https://www.themoviedb.org/)
+4. [Crie uma conta na TMDB(The Movie Database)](https://www.themoviedb.org/)
   - E criar uma API Key
   - Va em Settings > API > API Key (v3 auth)
   - Crie um arquivo .env na raiz do projeto
