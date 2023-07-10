@@ -1,9 +1,6 @@
 import { CalendarClock, Cherry, Clapperboard, Search, ThumbsUp, Video, View, Vote } from "lucide-react";
-import { Link, useLocation } from "wouter";
-import { useEffect, useState } from "react";
 
 import { AppLogo } from "./AppLogo";
-import { IGenre } from "./SidebarGenreLink";
 import { SidebarLink } from "./SidebarLink";
 
 const appName = {
@@ -11,6 +8,9 @@ const appName = {
   second: "Movies",
   third: "App"
 }
+
+
+
 
 
 
@@ -29,7 +29,6 @@ function Sidebar(): JSX.Element {
           <SidebarLink title="Now Playing" href="/now-playing" icon={<Video size={20} />} />
           <SidebarLink title="Genres" href="/genres" icon={<Cherry size={20} />} />
         </ul>
-
       </div>
     </aside>
   )

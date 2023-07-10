@@ -3,6 +3,7 @@ import { RegularPage } from "./components/Pages/Regular";
 import { Route } from "wouter";
 import { SearchPage } from "./components/Pages/Search";
 import { Sidebar } from "./components/Sidebar";
+import { getGenreName } from "./utils/getGenreName";
 
 export default function App() {
   return (
@@ -65,6 +66,7 @@ export default function App() {
             <Route path="/genres/:genre_id">
               {
                 params =>
+
                   <RegularPage
                     title=""
                     url={`/discover/movie?include_adult=false&include_video=false&language=en&sort_by=popularity.desc&with_genres=${params.genre_id}&page=`}
