@@ -3,7 +3,6 @@ import { RegularPage } from "./components/Pages/Regular";
 import { Route } from "wouter";
 import { SearchPage } from "./components/Pages/Search";
 import { Sidebar } from "./components/Sidebar";
-import { getGenreName } from "./utils/getGenreName";
 
 export default function App() {
   return (
