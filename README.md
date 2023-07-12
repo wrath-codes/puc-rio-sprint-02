@@ -32,6 +32,7 @@ npm run dev
   - Crie um arquivo .env na raiz do projeto
   - Troque VITE_API_KEY pelo valor da sua API Key
   - Troque VITE_READ_ACCESS_TOKEN pelo valor da sua Read Access Token
+  OBS: O Read Access Token é gerado diariamente, favor copiar do site da API.
 
 5. Acesse o endereço [http://localhost:5173](http://localhost:5173)
 
